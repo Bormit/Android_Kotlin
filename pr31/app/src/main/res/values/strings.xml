@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Угадывание числа</string>
+    <string name="StartingRange">Начало диапазона</string>
+    <string name="EndRange">Конец диапазона</string>
+    <string name="EnterButton">Ввести диапазон</string>
+    <string name="textView">Ваше число: </string>
+    <string name="Larger">Больше</string>
+    <string name="Less">Меньше</string>
+</resources>
