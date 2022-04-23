@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Molecule Man",
+    "sex": "W",
+    "phoneNumber": "77309176590"
+  },
+  {
+    "name": "Gary Jones",
+    "sex": "M",
+    "phoneNumber": "72076320465"
+  },
+  {
+    "name": "Kathryn Robinson",
+    "sex": "W",
+    "phoneNumber": "74520847855"
+  },
+  {
+    "name": "Michael Smith",
+    "sex": "M",
+    "phoneNumber": "78203302122"
+  },
+  {
+    "name": "Amanda Robinson",
+    "sex": "W",
+    "phoneNumber": "71505965818 "
+  },
+  {
+    "name": "Irene Shelton",
+    "sex": "W",
+    "phoneNumber": "76894934032"
+  },
+  {
+    "name": "David Rowe",
+    "sex": "-",
+    "phoneNumber": "71072338923"
+  },
+  {
+    "name": "John Thomas",
+    "sex": "-",
+    "phoneNumber": "71072338923"
+  }
+]
