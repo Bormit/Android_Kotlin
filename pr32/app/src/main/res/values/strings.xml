@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pr3.2</string>
+    <string name="editText">Ввод данных</string>
+    <string name="radio_website">Выбрать браузер</string>
+    <string name="radio_geo">Выбрать геолокацию</string>
+    <string name="radio_phone">Выбрать телефон</string>
+    <string name="button">Ввод данных</string>
+</resources>
