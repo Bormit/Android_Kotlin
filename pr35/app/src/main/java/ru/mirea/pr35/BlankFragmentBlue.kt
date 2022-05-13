@@ -50,6 +50,5 @@ class BlankFragmentBlue : Fragment() {
         @JvmStatic
         fun newInstance() =
             BlankFragmentBlue().apply {}
-
                 }
             }
