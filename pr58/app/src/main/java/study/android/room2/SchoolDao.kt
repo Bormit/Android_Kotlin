@@ -25,13 +25,38 @@ interface SchoolDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertStudentSubjectCrossRef(crossRef: StudentSubjectCrossRef)
 
+//    @Transaction
+//    @Query("SELECT * FROM school WHERE schoolName = :schoolName")
+//    suspend fun getSchoolAndDirectorWithSchoolName(schoolName: String): List<SchoolAndDirector>
+//
+//    @Transaction
+//    @Query("SELECT * FROM school WHERE schoolName = :schoolName")
+//    suspend fun getSchoolWithStudents(schoolName: String): List<SchoolWithStudents>
+//
+//    @Transaction
+//    @Query("SELECT * FROM subject WHERE subjectName = :subjectName")
+//    suspend fun getStudentsOfSubject(subjectName: String): List<SubjectWithStudents>
+//
+//    @Transaction
+//    @Query("SELECT * FROM student WHERE studentName = :studentName")
+//    suspend fun getSubjectsOfStudent(studentName: String): List<StudentWithSubjects>
+
     @Transaction
-    @Query("SELECT * FROM school WHERE schoolName = :schoolName")
-    suspend fun getSchoolAndDirectorWithSchoolName(schoolName: String): List<SchoolAndDirector>
+    @Query("SELECT * FROM school")
+    suspend fun getSchoolAndDirectorWithSchoolName(): List<SchoolAndDirector>
 
     @Transaction
     @Query("SELECT * FROM school WHERE schoolName = :schoolName")
     suspend fun getSchoolWithStudents(schoolName: String): List<SchoolWithStudents>
+
+    @Transaction
+    @Query("SELECT * FROM subject")
+    suspend fun getSubject(): List<SubjectWithStudents>
+
+    @Transaction
+    @Query("SELECT * FROM student")
+    suspend fun getStudent(): List<StudentWithSubjects>
+
 
     @Transaction
     @Query("SELECT * FROM subject WHERE subjectName = :subjectName")
@@ -40,4 +65,5 @@ interface SchoolDao {
     @Transaction
     @Query("SELECT * FROM student WHERE studentName = :studentName")
     suspend fun getSubjectsOfStudent(studentName: String): List<StudentWithSubjects>
+
 }
