@@ -80,6 +80,7 @@ class RateCheckService : Service() {
 
     fun sendNotification(rate: String) {
         createNotificationChannel(NOTIFICATION_CHANNEL_ID)
+        // Создайте явное намерение
         val intent = Intent(this,MainActivity::class.java)
         intent.apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -100,6 +101,8 @@ class RateCheckService : Service() {
 
 
     private fun createNotificationChannel(channelId:String) {
+        // Создаем NotificationChannel, но только в API 26+ (Android 8.0),
+        // потому что класс NotificationChannel является новым и отсутствует в библиотеке поддержки.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             val name = "My Channel"
             val channelDescription = "Channel Description"
